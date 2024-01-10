@@ -1,6 +1,6 @@
 from osgeo import ogr, osr
 
-shp_ds = ogr.Open(r'C:\Users\RISC\Desktop\Code\shp2xyz-master\test\test_line.shp')
+shp_ds = ogr.Open(r'test\test_line.shp')
 if shp_ds is None:
     raise ValueError(f"Could not open shapefile: ")
 shp_lyr = shp_ds.GetLayer()
